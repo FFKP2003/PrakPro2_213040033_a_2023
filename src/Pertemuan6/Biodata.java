@@ -33,7 +33,6 @@ public class Biodata extends JFrame {
        
        JTextField textFieldTelepon = new JTextField(); // untuk memasukkan teks no telepon atau sebuah form nya
        textFieldTelepon.setBounds(15,120,350,30); // untuk mengatur posisi dan ukuran textfieldTelepon
-
         
        JLabel labelRadio = new JLabel("Jenis Kelamin : "); // untuk menampilkan teks Jenis Kelamin di GUI
        labelRadio.setBounds(15,160,140,30); // untuk mengatur posisi dan ukuran labelRadio

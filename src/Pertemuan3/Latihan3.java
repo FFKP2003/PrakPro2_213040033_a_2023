@@ -55,7 +55,7 @@ public class Latihan3 extends JFrame {
        JTextArea txtOutput = new JTextArea("");
        txtOutput.setBounds(15,340,350,100);
        
-// baris kode ini untuk menambahkan itemlistner fungsinya saat checkbox berubah dipili atau tidak dipilih itemlistener akan dipanggil untuk memperbarui sebuah checkbox
+        // baris kode ini untuk menambahkan itemlistner fungsinya saat checkbox berubah dipili atau tidak dipilih itemlistener akan dipanggil untuk memperbarui sebuah checkbox
         checkBox.addItemListener(new ItemListener() {
         public void itemStateChanged(ItemEvent e) {
             CheckBoxSelected = e.getStateChange()==1;
