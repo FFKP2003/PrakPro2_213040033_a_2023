@@ -49,6 +49,7 @@ public class BiodataTableModel extends AbstractTableModel {
         return false;
     }
     
+    // sebuah Method ini digunakan untuk mengakses data yang disimpan dalam format
     public ArrayList<ArrayList<String>> getData() {
         return data;
     }
@@ -59,6 +60,7 @@ public class BiodataTableModel extends AbstractTableModel {
         fireTableRowsInserted(data.size() - 1, data.size() - 1);
     }
     
+     // Mengembalikan nilai sel di baris dan kolom tertentu dari data tabel
      @Override
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
         ArrayList<String> row = data.get(rowIndex);
@@ -66,11 +68,13 @@ public class BiodataTableModel extends AbstractTableModel {
         fireTableCellUpdated(rowIndex, columnIndex);
     }
     
+     // sebuah Method untuk mengubah data dari model
       public void update(ArrayList<String> newValue, int row) {
         data.set(row, newValue);
         fireTableRowsUpdated(row, row);
     }
       
+     // sebuah Method untuk menghapus data dari model
        public void remove(int row) {
         data.remove(row);
         fireTableRowsDeleted(row, row);
